@@ -1,11 +1,17 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Angular Notes</a>
+  <a class="navbar-brand" href="#">Início</a>
 </nav>
 <div class="container-fluid text-center pb-5">
   <div style="text-align:center">
     <h1>
       Welcome to {{title}}!
     </h1>
+    <nav>
+  		<a routerLink="/card">Card</a>
+  		<a routerLink="/card-list">Card List</a>
+	</nav>
+		<router-outlet></router-outlet>
+    <app-card-list [cards]="cards"></app-card-list>
   </div>
 </div>
